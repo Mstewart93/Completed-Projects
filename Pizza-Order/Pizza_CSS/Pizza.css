@@ -1,0 +1,100 @@
+/*this is for the star rating*/
+body {
+    font-family: cursive;
+    background-image: url(../background.webp);
+}
+
+img {
+    height: 200px;
+    width: 300px;
+    margin-left: 150px;
+
+}
+
+.checked {
+    color: orange;
+}
+
+.middle {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+#menuBG {
+    width: 600px;
+    height: 1200px;
+    margin: 10px auto;
+    background-color: darkolivegreen;
+    padding-left: 20px;
+    padding-right: 10px;
+    border: solid 2px black;
+}
+
+#frmMenu {
+    width: 400px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 200px;
+    height: 470x;
+    float: left;
+    top: auto;
+    bottom: auto;
+    margin: auto;
+   
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+    top: auto;
+    bottom: auto;
+    margin: auto;
+    
+}
+
+.center, .top {
+    text-align: center;
+    margin: auto;
+}
+
+.delivery {
+    margin: auto;
+}
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+   margin-left: 245px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.pizza {
+    float: right;
+}

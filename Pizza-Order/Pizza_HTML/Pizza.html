@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Little Farm Pizzaria</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script src="../Pizza_JavaScript/Pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="../Pizza_CSS/Pizza.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <div id="menuBG">
+            <h1 style="margin: 0 0px 0 10px;">Little Farm Pizzaria</h1>
+            <img src="../tractor.jpg">
+            <div class="rating center">
+                <h2>What are people saying about us?</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star"></span>
+            </div>
+                <div class="left review">I love the options that they offer!I love being able to easily customize what comes on my pizza. - Sandra D.</div>
+                <div class="right review">While I don't agree with offering pinapple on pizza...I do enjoy the quality they provide. -Danny Z.</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input id="btnOrder" type="button" onclick="getReceipt()"
+                value="Place Order">
+            <form id="frmMenur">
+                <div class="menu top delivery">
+                    <h3>Delivery or Pickup?</h3>                        
+                    <input class="delivery-pickup" type="radio" name="Delivery-Pickup"
+                        value="Delivery">Delivery<br>
+                    <input class="delivery-pickup" type="radio" name="Delivery-Pickup"
+                        value="Pickup">Pickup<br>
+                    
+                </div>
+                <div class="menu middle">
+                    <h3>Cheese and Sauce</h3>
+                
+                    <input class="cheese" type="radio" name="Cheese"
+                        value="Cheddar"> Cheddar <br>
+                    <input class="cheese" type="radio" name="Cheese"
+                        value="Mozzarella"> Mozzarella <br>
+                    <input class="cheese" type="radio" name="Cheese"
+                        value="Pepper Jack"> Pepper Jack <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input class="sauce" type="radio" name="Sauce"
+                        value="Garlic and Herbs"> Garlic and Herbs <br>
+                    <input class="sauce" type="radio" name="Sauce"
+                        value="Alfredo"> Alfredo <br>
+                    <input class="sauce" type="radio" name="Sauce"
+                        value="Pizza Sauce"> "Pizza Sauce" <br>
+                    <input class="sauce" type="radio" name="Sauce"
+                        value="Marinara"> Marinara <br>
+                    
+                </div>
+                <div class="menu left">
+                    <h3>Size and Shape:</h3>
+                    <input class="size" type="radio" name="Size"
+                        value="Personal Pizza"> Personal Pizza <br>
+                    <input class="size" type="radio" name="Size"
+                        value="Small Pizza"> Small Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                        value="Medium Pizza"> Medium Pizza <br>
+                    <input class="size" type="radio" name="Size"
+                        value="Large Pizza" checked>Large Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                        value="Extra Large Pizza">Extra Large Pizza<br>
+                    <br>
+                    <br>
+                    <input class="shape" type="radio" name="Shape"
+                        value="circle">Circle<br>
+                    <input class="shape" type="radio" name="Shape"
+                        value="oval">Oval<br>
+                    <input class="shape" type="radio" name="Shape"
+                        value="square">Square<br>
+                    <input class="shape" type="radio" name="Shape"
+                        value="rectangle">Rectangle<br>
+                </div>
+                <div class="menu right pizza">
+                    <h3>Toppings:</h3>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Pepperoni">Farm Fresh Pepperoni<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Sausage"> Farm Fresh Sausage<br>
+                    <input class="toppings" type="checkbox" name="Topping" 
+                        value="Canadian Bacon">Farm Fresh Canadian Bacon<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Ground Beef">Farm Fresh Ground Beef<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Chicken">Farm Fresh Chicken <br>
+                    <br>
+                    <br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Pineapple">Garden Fresh Pineapple <br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Onion">Garden Fresh  Onion <br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Mushroom">Garden Fresh  Mushrooms <br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Tomatoes">Garden Fresh  Tomatoes <br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Black Olives">Garden Fresh  Black Olives <br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Green Olives">Garden Fresh  Green Olives <br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Green Peppers">Garden Fresh  Green Peppers <br>
+                </div>
+                <div id="cart">
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+           
+        </div>
+    </body>
+</html>

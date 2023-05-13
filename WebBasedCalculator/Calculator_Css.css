@@ -1,0 +1,90 @@
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1.2px solid darkgreen;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: rgba(34, 100, 34, 0.5);
+    color: black;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid darkgreen;
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(34,100,34,0.5));
+    text-shadow: 0 1px rgba(0, 0, 0, .4);
+    box-shadow: inset 0 0 0 1px rgba (0, 0, 0, .05),
+    inset 0 1px 0 0 rgba(0, 0, 0, .05),
+    inset 0 -1px 0 0 rgba(0, 0, 0, .05),
+    0 1px 0 0 rgba(0, 0, 0, .05);
+}
+
+button:hover {
+    background-color: rgba(34, 100, 34, 0.5);
+}
+
+.operator {
+    color: black;
+    background-image: linear-gradient( to bottom, transparent, transparent 50% rgba(34, 100, 34, 0.5));
+    background-color: rgba(43, 108, 43, 0.4);
+}
+
+.all-clear{
+    background-color: rgba(20, 154, 138, 0.5);
+    border-color: darkgreen;
+    color: black;
+}
+
+.all-clear:hover {
+    background-color: rgba(0, 127, 112, 0.8);
+}
+
+.equal-sign {
+    background-color: rgba(56, 165, 216, 0.5);
+    border-color: darkgreen;
+    color: black;
+    height: 100%;
+    grid-area: 2/4/6/5;
+}
+
+.equal-sign:hover {
+    background-color: rgba(24, 91, 133, 0.8);
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20 px;
+    padding: 20px;
+}
+
+
+

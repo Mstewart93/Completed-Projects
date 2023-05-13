@@ -17,7 +17,7 @@ var task = document.getElementById('task').value;
 var todos = get_todos();
 //this adds  a new task at the END fo the array
 todos.push(task);
-//concerst task input to a JSON string
+//converst task input to a JSON string
 localStorage.setItem('todo', JSON.stringify(todos));
 document.getElementById("task").value="";
 show();
@@ -47,3 +47,22 @@ function show() {
 document.getElementById('add').addEventListener('click', add);
 //this will keep the inputs displayed on screen
 show();
+
+
+// this will creat the ability to remove the todo item
+
+function remove() {
+    var id = this.getAttribute('id');
+    var todos = get_todos();
+    todos.splice(id, 1);
+    localStorage.setItem('todo', JSON.stringify(todos));
+    show();
+
+    return false;
+}
+
+//this tells browser how to display the todo array after item is removed
+var buttons = document.getElementsByClassName('remove');
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', remove);
+}
